@@ -49,6 +49,17 @@ body {
   border-radius: 5px;
   padding: 1rem 2rem;
   margin: 0.5rem;
+  animation: toastStart .5s ease-in;
+}
+@keyframes toastStart{
+  from{
+    transform: scale(1,0);
+    opacity: 0.5;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .toast.info {
